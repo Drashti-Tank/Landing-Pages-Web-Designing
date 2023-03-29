@@ -1,0 +1,187 @@
+body {
+    background-color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    /* position: relative; */
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+}
+
+/* --------------Border 1,2 & Round Border 1,2----------------- */
+
+.border1 {
+    position: relative;
+    margin: 7px;
+    text-align: center;
+    border: white 10px solid;  
+    border-radius: 1px 100px;
+    /* background: #d4797d; */
+    background-image: linear-gradient(to right, rgb(255, 152, 84) , rgb(255, 81, 0));
+    padding: 70px; 
+    width: 48px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.roundBorder1 {
+    position: absolute;
+    top: 20px;
+    left: -30px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+    width: 32px;
+    background-image: linear-gradient(to right, rgb(255, 152, 84) , rgb(255, 81, 0));
+    border: white 7px solid;
+    color: white;
+}
+
+.border2 {
+    position: relative;
+    margin: 5px;
+    /* margin-top: 20px; */
+    text-align: center;
+    border: white 10px solid;  
+    border-radius: 100px 1px;
+    /* background: #d4797d; */
+    background-image: linear-gradient(to right, rgb(231, 99, 99) , rgb(255, 0, 98));
+    padding: 75px; 
+    width: 48px;
+    color: white;
+    margin-top: 30px;
+}
+
+.roundBorder2 {
+    position: absolute;
+    top: 20px;
+    left: 170px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+    width: 30px;
+    background-image: linear-gradient(to right, rgb(233, 136, 136) , rgb(255, 0, 98));
+    border: white 7px solid;
+    color: white;
+}
+
+/* -------------Border 3,4 & Round Border 3,4---------------- */
+
+.border3 {
+    position: relative;
+    margin: 7px;
+    text-align: center;
+    border: white 10px solid;  
+    border-radius: 1px 100px;
+    /* background: #d4797d; */
+    background-image: linear-gradient(to right, rgb(255, 84, 141) , rgb(138, 9, 59));
+    padding: 85px; 
+    width: 50px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.roundBorder3 {
+    position: absolute;
+    top: 20px;
+    left: -35px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 15px;
+    width: 32px;
+    background-image: linear-gradient(to right, rgb(255, 84, 141) , rgb(138, 9, 59));
+    border: white 7px solid;
+    color: white;
+}
+
+.border4 {
+    position: relative;
+    margin: 5px;
+    /* margin-top: 20px; */
+    text-align: center;
+    border: white 10px solid;  
+    border-radius: 100px 1px;
+    /* background: #d4797d; */
+    background-image: linear-gradient(to right, rgb(197, 36, 149) , rgb(179, 14, 83));
+    padding: 85px; 
+    width: 50px;
+    color: white;
+    margin-top: 30px;
+}
+
+.roundBorder4 {
+    position: absolute;
+    top: 20px;
+    left: 185px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 15px;
+    width: 30px;
+    background-image: linear-gradient(to right, rgb(197, 36, 149) , rgb(179, 14, 83));
+    border: white 7px solid;
+    color: white;
+}
+
+/* ---------------Border 5,6 & Round Border 5,6-------------- */
+
+.border5 {
+    position: relative;
+    margin: 7px;
+    text-align: center;
+    border: white 10px solid;  
+    border-radius: 1px 100px;
+    /* background: #d4797d; */
+    background-image: linear-gradient(to right, rgb(14, 155, 136) , rgb(127, 205, 211));
+    padding: 95px; 
+    width: 50px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+.roundBorder5 {
+    position: absolute;
+    top: 20px;
+    left: -38px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 20px;
+    width: 32px;
+    background-image: linear-gradient(to right, rgb(14, 155, 136) , rgb(127, 205, 211));
+    border: white 7px solid;
+    color: white;
+}
+
+.border6 {
+    position: relative;
+    margin: 5px;
+    /* margin-top: 20px; */
+    text-align: center;
+    border: white 10px solid;  
+    border-radius: 100px 1px;
+    /* background: #d4797d; */
+    background-image: linear-gradient(to right, rgb(228, 188, 12) , rgb(248, 211, 48));
+    padding: 95px; 
+    width: 50px;
+    color: white;
+    margin-top: 30px;
+}
+
+.roundBorder6 {
+    position: absolute;
+    top: 20px;
+    left: 197px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 20px;
+    width: 30px;
+    background-image: linear-gradient(to right, rgb(228, 188, 12) , rgb(248, 211, 48));
+    border: white 7px solid;
+    color: white;
+}

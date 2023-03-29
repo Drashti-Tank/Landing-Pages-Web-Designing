@@ -1,0 +1,576 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+i {
+    margin-right: 10px;
+}
+
+/* ******************* Header starts here ******************* */
+
+.header {
+    background-color: rgb(59, 58, 58);
+    /* padding: 30px; */
+}
+
+.logo {
+    padding: 20px;
+    float: left;
+    width: 17%;
+}
+
+.menu {
+    float: left;
+    width: 65%;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 25px 40px 15px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header a {
+    color: white;
+    display: inline-block;
+}
+
+.social {
+    float: right;
+    width: 18%;
+}
+
+.social a {
+    margin: 25px 20px 15px 0;
+    color: white;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* ******************* Header ends here ******************* */
+
+/* ******************* Banner starts here ******************* */
+
+.line-height {
+    line-height: 30px;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner::before {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(45, 58, 54, 0.582);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+/* ******************* Banner ends here ******************* */
+
+/* ******************* Benefits starts here ******************* */
+
+.benefits {
+    float: left;
+    width: 50%;
+    margin: 35px 0;
+}
+
+.benefits span {
+    color: rgb(9, 146, 100);
+}
+
+.services {
+    text-align: center;
+}
+
+.services ul li {
+    display: inline-block;
+    width: 17%;
+    margin: 30px;
+    text-align: center;
+}
+
+.services ul li i {
+    color: rgb(142, 172, 36);
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+/* ******************* Benefits ends here ******************* */
+
+/* ******************* Who we are starts here ******************* */
+
+.creative-coworking {
+    float: left;
+    width: 50%;
+}
+
+.who-we-are .text {
+    margin-top: 33%;
+}
+
+.who-we-are h1 {
+    width: 70%;
+    font-size: 40px;
+    line-height: 45px;
+    margin-top: 7px;
+}
+
+.who-we-are p {
+    margin-top: 10px;
+}
+
+.who-we-are span {
+    color: rgb(9, 146, 100);
+}
+
+.creative-coworking img {
+    margin: 40px 0 60px 50px;
+}
+
+
+
+/* ******************* Who we are ends here ******************* */
+
+/* ******************* Gallery starts here ******************* */
+
+  .gallery img {
+    width: 100%;
+  }
+
+  .col1 {
+    float: left;
+    width: 33%;
+    /* margin-bottom: 50px; */
+    padding: 12px 12px;
+  }
+
+  .col1:hover .overlay1 {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .col1:hover .overlay-up {
+    bottom: 0;
+    height: 100%;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .col1:hover .overlay-down {
+    height: 100%;
+    cursor: pointer;
+    opacity: 1;
+  }
+
+.col1-center {
+    float: left;
+    width: 66%;
+    padding: 12px 12px;
+}
+
+.overlay-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    background-color: rgb(71, 8, 52);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .col1-center:hover .overlay-left {
+    width: 100%;
+    cursor: pointer;
+    opacity: 1;
+  }
+.col1-right {
+    float: left;
+    width: 33%;
+    padding: 12px 12px;
+}
+
+.col1-right:hover .overlay-right {
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+    opacity: 1;
+  }
+
+
+/* ******************* Gallery ends here ******************* */
+
+/* ******************* Examples starts here ******************* */
+
+.examples {
+    margin: 60px 0;
+}
+
+.examples span {
+    color: rgb(9, 146, 100);
+}
+
+.container1 {
+    max-width: 1370px;
+    margin: auto;
+}
+
+.examples img {
+    width: 100%;
+}
+
+.example-text {
+    text-align: center;
+    padding: 30px;
+}
+
+.example-text h1 {
+    margin-top: 20px;
+}
+
+.example-div {
+    /* text-align: center; */
+    float: left;
+    width: 23%;
+    margin: 12px;
+}
+
+/* *********************** Examples ends here *********************** */
+
+/* *********************** Review starts here *********************** */
+
+.review {
+    text-align: center;
+    margin: 30px 0 70px 0;
+}
+
+.review h3 {
+    width: 70%;
+    margin: auto;
+}
+
+.review p {
+    margin: 20px 0;
+}
+
+.review span {
+    color: rgb(9, 146, 100);
+}
+
+/* *********************** Review ends here *********************** */
+
+/* *********************** Contact Us starts here *********************** */
+
+.we-create {
+    float:left;
+    width: 50%;
+    line-height: 50px;
+}
+
+.margin {
+    margin-top: 50px;
+}
+
+.we-create i {
+    color: #06beb5;
+    /* margin-right: 10px; */
+}
+
+.we-create a {
+    color: white;
+}
+
+.button {
+    border-radius: 6px;
+    background-color: #06beb5;
+    border: none;
+    text-align: center;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* *********************** Contact Us ends here *********************** */
+
+/* *********************** Follow us starts here *********************** */
+
+.follow-us {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.follow-us span {
+    color: rgb(9, 146, 100);
+}
+
+.follow-us img {
+    width: 100%;
+    margin: auto;
+}
+
+.box {
+    position: relative;
+}
+
+.row {
+    margin-top: 30px;
+  }
+  
+  .col {
+    float: left;
+    width: 25%;
+    margin-bottom: 50px;
+    padding: 12px 12px;
+  
+  }
+  
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgb(2, 84, 97);
+  }
+  
+  .col:hover .overlay1 {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .overlay-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    }
+  
+  
+  .overlay-up {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(106, 161, 2);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .col:hover .overlay-up {
+    bottom: 0;
+    height: 100%;
+    cursor: pointer;
+    opacity: 1;
+  }
+  
+  
+  .overlay-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(71, 8, 52);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .col:hover .overlay-down {
+    height: 100%;
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  .overlay-right {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: rgb(214, 69, 12);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .col:hover .overlay-right {
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  /* *********************** Follow us ends here *********************** */
+
+  /* *********************** footer starts here *********************** */
+
+  .footer {
+    background-color: rgb(12, 11, 11);
+    padding: 40px 0;
+    color: white;
+  }
+
+  /* *** space *** */
+
+  .space {
+    float: left;
+    width: 35%;
+  }
+
+  .margin-h1 {
+    margin-top: 70px;
+  }
+
+  .margin-p {
+    margin-top: 20px;
+  }
+
+  /* .space ul li {
+    display: inline-block;
+  } */
+
+  .social-links a {
+    border-radius: 50%;
+    padding: 10px;
+    margin: 15px 15px 20px 0;
+  }
+
+  .space .fb-bg {
+    background-color: rgb(10, 17, 109);
+    color: white;
+  }
+
+  .space .insta-bg {
+    background-color: rgb(187, 30, 122);
+    color: white;
+  } 
+
+  .space .twitter-bg {
+    background-color: white;
+    color: rgb(2, 123, 153);
+  }
+
+  .subscribe {
+    margin-bottom: 20px;
+  }
+
+  .subscribe a {
+    color: white;
+    display: inline-block;
+    border: 1px solid rgb(212, 209, 209);
+    padding: 10px 100px;
+    text-align: center
+  }
+
+  /* *** about *** */
+
+  .about-links {
+    float: left;
+    width: 27%;
+    margin-left: 36px;
+  }
+
+  .about-links i, a {
+    color: white;
+  }
+
+  .about-links a {
+    display: inline-block;
+    margin-top: 3.5px;
+  }
+
+  .about-links .address {
+    margin-top: 25px;
+  }
+
+  .about-links ul li {
+    margin-left:35px ;
+  }
+
+
+
+
+  /* *********************** footer ends here *********************** */
+  
+
+

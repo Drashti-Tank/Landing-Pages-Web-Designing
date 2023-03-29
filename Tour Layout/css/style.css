@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-orange:  #f5a93e;
+    --dark-orange: #f7960e;
+  }
+
+a {
+    text-decoration: none;
+}
+
+/* Menu started  */
+
+nav {
+    padding: 0 !important;
+    border-top: 5px solid var(--dark-orange);
+}
+
+.bg-dark {
+    background: #41464b!important;
+}
+
+a.navbar-brand img{
+    padding: 5px 0 !important;
+}
+
+.navbar .navbar-brand span {
+    display: inline-block;
+    font-family: 'Freehand', cursive;
+    color: var(--light-orange);
+    padding: 4px 0 0 10px;
+    font-size: 32px !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 255 255);
+}
+
+.navbar .container img {
+    max-width: 100%;
+}
+
+.navbar .navbar-nav .nav-item a {
+    padding-right: 40px;
+    font-size: 14px !important;
+}
+
+a.navbar-brand {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.navbar .navbar-nav .nav-item a:hover {
+    color: var(--dark-orange);
+}
+
+/* Menu end  */
+
+/* Banner started */
+
+
+.banner img {
+    width: 100% !important;
+    height: 100vh !important;
+    
+}
+
+.banner img.grad {
+    background: linear-gradient(180deg, rgba(255, 255, 0, 0), rgb(0, 0, 0)) !important;
+}
+
+.banner {
+    position: relative;
+}
+
+
+.banner form {
+    position: absolute;
+    bottom: 28px;
+    left: 0;
+    right: 0;
+    background-color: #00000087;
+    padding: 22px 0 30px 43px !important;
+    border-radius: 9px;
+    max-width: 1320px !important;
+    margin: auto !important;
+}
+
+
+label {
+    color: white !important;
+}
+
+input {
+    border-radius: 0 !important;
+}
+
+form a {
+    border-radius: 0 !important;
+    color: white !important;
+    background-color: var(--dark-orange) !important;
+}
+
+a.btn {
+    padding: 6.5px 37px !important;
+}
+
+form .hidden {
+    visibility: hidden;
+}
+
+/* Banner end  */
+
+/* About us started  */
+
+.bg-aboutus {
+    background-color: black;
+    padding: 80px 0 130px 0 !important;
+}
+
+.bg-aboutus .display-1 {
+    color: var(--dark-orange) !important;
+    font-weight: bold !important;
+}
+
+.bg-aboutus h3 {
+    color: var(--dark-orange);
+}
+
+.bg-aboutus p {
+    color: white;
+}
+
+.bg-aboutus .h1-div {
+    position: relative;
+    top: 41px;
+    z-index: 1;
+}
+
+.bg-aboutus .h3-div {
+    position: relative;
+    z-index: 2;
+    background-color: black;
+    
+}
+
+.h3-div h3 {
+    font-size: 24px !important;
+}
+
+.box-border {
+    border: 2px solid var(--dark-orange);
+    padding: 15px 12px !important;
+    /* margin: 0 -10px; */
+    flex: 0 0 auto;
+    width: 23% !important;
+}
+
+
+
+/* About us text  */
+
+.aboutus-text a {
+    display: inline-block;
+    color: var(--dark-orange);
+    padding: 8px 40px;
+    border: 1px solid var(--dark-orange);
+    margin: 10px 20px 0 20px;
+}
+
+.aboutus-text a:hover {
+    background-color: var(--dark-orange);
+    color: white;
+}
+
+.uni-img {
+    padding-bottom: 40px;
+}
+
+.uni-img img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* About us end  */
+
+/* Testimony  */
+
+
+
+.testimony {
+    background: linear-gradient(rgba(142, 75, 3, 0.65),rgba(142, 75, 3, 0.65)), url(../images/North-Table-Mtn-1600-x-600-px.jpg) no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-testimony {
+    padding-top: 40px !important;
+}
+
+.bg-testimony h3 {
+    font-weight: bold
+}
+
+/* gallery  */
+
+.gallery {
+    padding: 0 !important;
+    
+}
+
+.gallery-width {
+    flex: 0 0 auto;
+    width: 14.2857142857% !important;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+/* footer start  */
+
+.footer-text {
+    padding: 20px 0;
+    background-color: black;
+}
+
+.footer-text h4 {
+    color: var(--dark-orange);
+}
+
+.footer-text a {
+    display: inline-block;
+    color: white;
+}
+
+.footer-text i {
+    padding-right: 10px;
+}
+
+.testimony-footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.818),rgba(0, 0, 0, 0.818)), url(../images/North-Table-Mtn-1600-x-600-px.jpg) no-repeat;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;   
+}

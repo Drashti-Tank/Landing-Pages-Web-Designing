@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Almarai', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    margin-left: 10px;
+}
+
+.hdr-ftr a {
+    color: white;
+}
+
+ul li {
+    list-style: none;
+}
+
+.header {
+    background-color: rgb(211, 197, 197);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 20px 15px;
+}
+
+.menu ul li a {
+    color:rgb(83, 28, 28);
+    padding: 5px;
+}
+
+ul li a:hover {
+    background-color: rgb(83, 28, 28);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* ************************** header ends here *************************** */
+
+/* ************************** banner1 starts here *************************** */
+
+.banner1 {
+    background-color: rgb(211, 197, 197);
+}
+
+.text-1 {
+    margin: 35px 80px;
+}
+
+.text-1 h1 {
+    margin: 10px 0;
+    font-size: 34px;
+    line-height: 50px;
+}
+
+.text-1 p {
+    margin: 15px 0;
+    line-height: 25px;
+}
+
+.btn {
+    background-color: rgb(59, 9, 9);
+    color: white;
+    padding: 5px 60px;
+    margin: 70px 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(79, 167, 21);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* *************** banner1 end here ************ */
+
+.who-we-are {
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+.title {
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    text-decoration: underline;
+}
+
+.p-div {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.banner {
+    padding: 35px 90px 20px 10px;
+}
+
+.text-2 {
+    margin-top: 28px;
+    padding: 60px 60px 20px 90px;
+}
+
+.text-2 h1 {
+    line-height: 30px;
+}
+
+.text-2 p {
+    line-height: 22px;
+    margin: 10px 0 0 0;
+}
+
+.text-2 h2 {
+    margin: 15px 0;
+}
+
+/* *********************** other products starts here *********************** */
+
+.other-product {
+    background-color: rgb(211, 197, 197);
+}
+
+.image {
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.other-product h2, h3, p {
+    margin: 10px;
+}
+
+.other-product p {
+    width: 50%;
+}
+
+.other-product h2 {
+    border-bottom: 1px black solid;
+}
+
+/* *********************** other products ends here *********************** */
+
+/* *********************** about our products starts here *********************** */
+
+.about {
+    margin: 20px 0;
+}
+
+.about img, .text-4 {
+    padding: 20px;
+}
+
+.flex-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-4 p {
+    margin: 20px 50px 0 0;
+    line-height: 22px;
+}
+
+/* *********************** about our products starts here *********************** */
+
+/* ----------------------------copyright section starts here ---------------- */
+
+.hdr-ftr {
+    background-color: black;
+    padding: 1px;
+    color: white;
+    text-align: center;
+}
+
+/* ----------------------------copyright section ends here ---------------- */
+
+
+

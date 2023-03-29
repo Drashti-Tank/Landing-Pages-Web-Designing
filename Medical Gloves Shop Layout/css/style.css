@@ -1,0 +1,989 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+:root {
+    --blue: #0a1a64;
+    --gray: rgb(212, 207, 207);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    padding: 60px 10px 15px 10px;
+    text-align: center;
+    color: var(--blue);
+    font-size: 33px;
+}
+
+/* <!-- ************************ Top header starts here ************************  */
+
+.top-header {
+    background-color: var(--blue);
+    text-align: center;
+    color: white;
+    padding: 5px
+}
+
+.top-header span {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 15px;
+    animation-name: text;
+    animation-duration: 3s;
+    animation-iteration-count:infinite ;
+}
+
+@keyframes text {
+    from {color: red;}
+    to {color: rgb(230, 230, 17);}
+}
+
+/* ************************ Top header ends here ************************ */
+
+/* ************************ Header starts here ************************ */
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    padding: 6px;
+}
+
+.header a {
+    color: var(--blue);
+    /* font-size: 20px; */
+}
+
+ul li {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    padding: 15px;
+}
+
+.social a {
+    padding: 10px;
+    color: var(--blue);
+    font-size: 20px;
+}
+
+.social a:hover {
+    animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+    100% {transform: rotate(360deg);}
+  }
+
+
+/* ************************ Header ends here ************************ */
+
+/* ******************* Banner starts here ***************** */
+
+.banner {
+    background-color: var(--blue);
+    position: relative;
+}
+
+.flex-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* flex-direction: row-reverse; */
+}
+
+.banner-text h1 {
+    color: white;
+    width: 28%;
+    font-size: 55px;
+    line-height: 60px;
+}
+
+.banner-text p {
+    color: white;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.banner-text h2 {
+    color: rgb(197, 197, 10);
+    font-size: 35px;
+    font-weight: bold;
+    animation-name: text-h2;
+    animation-duration: 4s;
+    animation-iteration-count:infinite ;
+}
+
+@keyframes text-h2 {
+    0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: rgb(255, 0, 191);}
+  100% {color: rgb(51, 236, 51);}
+}
+
+
+.animate-text
+{
+   text-transform: uppercase;
+   background-image: linear-gradient(
+    -225deg,
+    #2ab842 0%,
+    #fa6234 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.banner-text strike {
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.button {
+    border-radius: 20px;
+    background-color: rgb(156, 156, 15);
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 8px 22px;
+    /* width: 150px; */
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button:hover span {
+    padding-right: 30px;
+}
+
+.button:hover {
+    background-color: green;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.banner-image {
+    /* text-align: right; */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.banner-text {
+    padding: 140px 0;
+}
+
+/* ************************ Banner ends here ************************ */
+
+/* ************************ Popular categories starts here ************************ */
+
+.flex-category {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* position: relative;
+    animation: move 5s infinite;
+    animation-timing-function: linear; */
+}
+
+/* @keyframes move {
+    from {left: 0px;}
+    to {left: 50%;}
+  } */
+
+.category-div {
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35px;
+    margin: 12px 0;
+    align-items: center;
+    background-color: var(--gray);
+}
+
+.category-text {
+    padding: 15px 30px 15px 0;
+    
+}
+
+.category-text p {
+    width: 5%;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.category-image img {
+    max-width: 100%;
+}
+
+.btn {
+        border-radius: 20px;
+        background-color: white;
+        color: white;
+        font-weight: bold;
+        border: none;
+        text-align: center;
+        padding: 4px 11px;
+        /* width: 150px; */
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 20px 0;
+        display: inline-block;
+        animation-name: category;
+    animation-duration: 3s;
+    animation-iteration-count:infinite ;
+    }
+
+    @keyframes category {
+        from {background-color: var(--blue);}
+        to {background-color: rgb(139, 139, 8);}
+    }
+
+
+    
+      
+    /* .btn span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.2s;
+    } */
+      
+    /* .btn span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -5px;
+        transition: 0.5s;
+    } */
+      
+    /* .btn:hover {
+        background-color: var(--blue);
+        color: white;
+    } */
+      
+    /* .btn:hover span:after {
+        opacity: 1;
+        right: 0;
+    } */
+
+    .all-category {
+        padding: 10px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .all-category a {
+        color: var(--blue);
+    }
+
+    .all-category, .anti-virus i {
+        color: var(--blue);
+        font-size: 40px;
+        /* text-align: center; */
+    }
+
+    .all-category i {
+        animation: rotate-icon 5s infinite;
+    }
+
+    @keyframes rotate-icon {
+        50% {transform: rotate(360deg);}
+      }
+
+
+
+    .all-category p {
+        color: var(--blue);
+        font-weight: bold;
+        margin-top: 35px;
+        font-size: 20px;
+        /* text-align: center; */
+    }
+
+/* ************************ Popular categories ends here ************************ */
+
+/* ************************ Antibacterial starts here ************************ */
+
+.antibacterial {
+    margin-top: 40px;
+    padding: 60px 0;
+    background-color: var(--gray);
+}
+
+.flex-antibacterial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* width: 45%; */
+}
+
+.antibacterial-text {
+    width: 50%;
+}
+
+.antibacterial-text h1 {
+    color: var(--blue);
+    width: 65%;
+    font-size: 40px;
+    line-height: 55px;
+}
+
+.antibacterial-text h4 {
+    color: var(--blue);
+}
+
+.antibacterial-text p {
+    color: var(--blue);
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.antibacterial strong {
+    display: inline;
+    margin: 15px 55px 15px 0;
+    color: var(--blue);
+}
+  
+  .antibacterial a{
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 10px 30px;
+    width: 30%;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  .antibacterial a span{
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+  }
+  
+  .antibacterial a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--blue);
+    transition: all .35s;
+    border-radius: 20px;
+  }
+  
+  .antibacterial a:hover{
+    color: #fff;
+    border-radius: 20px;
+    /* border: 1px solid green; */
+  }
+  
+  .antibacterial a:hover:after{
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .antibacterial i {
+    padding-right: 15px;
+  }
+
+
+/* .video {
+    height: 300px;
+    width: 500px;
+    margin: 5px;
+} */
+
+/* ************************ Antibacterial ends here ************************ */
+
+/* ******************** product start here ***************** */
+
+.flex-product {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product i {
+    color: rgb(209, 209, 8);
+}
+
+.box {
+    position: relative;
+}
+
+.row {
+    text-align: center;
+}
+
+  
+  .col {
+    display: inline-block;
+    width: 19.5%;
+    margin-bottom: 50px;
+  
+  }
+  
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: var(--blue);
+  }
+  
+  .col:hover .overlay1 {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .overlay-text {
+    color: white;
+    font-weight: bold;
+    /* font-size: 20px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    }
+  
+  
+  .overlay-up {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--blue);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .col:hover .overlay-up {
+    bottom: 0;
+    height: 100%;
+    cursor: pointer;
+    opacity: 1;
+  }
+  
+  
+  .overlay-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--blue);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .col:hover .overlay-down {
+    height: 100%;
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  .overlay-right {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: var(--blue);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .col:hover .overlay-right {
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+    opacity: 1;
+  }
+
+/* ******************** product start here ***************** */
+
+/* ********************** Effective starts here ****************** */
+
+.effective {
+    background-color: var(--gray);
+}
+
+.effective h1 {
+    width: 33%;
+    margin: auto;
+}
+
+.effective p {
+    text-align: center;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.flex-effective {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 45px 0;
+}
+
+.anti-virus {
+    text-align: center;
+    width: 20%;
+}
+
+.anti-virus h3 {
+    color: var(--blue);
+    margin: 15px 0;
+}
+
+.animate-text2
+{
+   /* text-transform: uppercase; */
+   background-image: linear-gradient(
+    -225deg,
+    var(--blue) 0%,
+    #60ca46 29%,
+    var(--blue) 67%,
+    #60ca46 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 20px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* ********************** Effective ends here ****************** */
+
+/* ********************** Blog starts here ****************** */
+
+.blog {
+    padding-bottom: 30px;
+}
+
+.flex-blog {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.blog-div {
+    width: 30%;
+    margin: 14px;
+    
+}
+
+.blog-div img {
+    border-radius: 8px;
+}
+
+.blog-div:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.blog-div p {
+    color: var(--blue);
+    font-weight: bolder;
+    line-height: 23px;
+}
+
+/* .blog img:hover {
+    transform: scale(1.5,1.5);
+    overflow:hidden;
+    cursor: pointer;
+} */
+/* ********************** Blog ends here ****************** */
+
+/* ****************** Latest review starts here ****************** */
+
+.review {
+    background-color: var(--gray);
+    padding-bottom: 40px;
+}
+
+.review h1 i {
+    padding-right: 10px;
+    font-size: 30px;
+    color: goldenrod;
+}
+
+.flex-review {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.review-text {
+    color: var(--blue);
+    background-color: white;
+    width: 23%;
+    border-radius: 50px 15px;
+    padding: 14px;
+    line-height: 28px;
+    /* text-align: right; */
+    animation-name: text3;
+    animation-duration: 3s;
+    animation-iteration-count:infinite ;
+}
+
+@keyframes text3 {
+     0% {background-color: rgb(130, 197, 252);}
+     25% {background-color: rgb(151, 241, 91);}
+     50% {background-color: rgb(130, 197, 252);}
+     75% {background-color: rgb(151, 241, 91);}
+     100% {background-color: rgb(130, 197, 252);}
+}
+
+
+strong {
+    display: block;
+}
+
+.review-text i {
+    color: goldenrod;
+    font-size: small;
+}
+
+/* ****************** Latest review ends here ****************** */
+
+/* **************** Form start here ******************* */
+
+.form-section {
+    padding-bottom: 30px;
+}
+
+.form-section h1 {
+    padding: 60px 10px 15px 10px;
+    /* text-align: center; */
+    color: var(--blue);
+    font-size: 33px;
+}
+
+.form-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.user input {
+    width: 100%;
+    border: none;
+    padding: 10px 100px;
+    background-color: var(--gray);
+    border-radius: 20px;
+}
+
+.row2 input {
+    width: 100%;
+    border: none;
+    /* padding: 10px 30px; */
+    margin-top: 20px;
+    padding: 66px 30px;
+    background-color: var(--gray);
+    border-radius: 20px;
+}
+
+::placeholder {
+    text-align: center;
+    color: var(--blue);
+}
+
+input[type=submit] {
+    border: none;
+    padding: 10px 30px;
+    background-color: #bdbd19;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.form-section button {
+    font-size: 18px;
+    border-radius: 20px;
+    background: var(--blue);
+    color: #fff;
+    border: 1px solid var(--blue);
+    padding: 10px 40px;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .form-section button:hover {
+    color: var(--blue);
+    border-radius: 20px;
+  }
+  .form-section button::after {
+    content: "";
+    background: #ecf0f1;
+    position: absolute;
+    z-index: -1;
+    padding: 10px 30px;
+    display: block;
+    border-radius: 20px;
+  }
+
+  .form-section button[class^="grow"]::after {
+    transition: all 0.3s ease;
+  }
+  .form-section button[class^="grow"]:hover::after {
+    transition: all 0.3s ease-out;
+  }
+  .form-section button.grow_box::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0);
+  }
+  .form-section button.grow_box:hover::after {
+    transform: scale(1, 1);
+  }
+/* *********************** Form end here ********************* */
+
+/* ********************** How can we help starts here ****************** */
+
+.help {
+    background-color: var(--gray);
+    padding-bottom: 30px;
+}
+
+.flex-help {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.help-text {
+    width: 40%;
+}
+
+.help-text h1 {
+    color: var(--blue);
+    width: 60%;
+    font-size: 45px;
+    padding: 40px 0 10px 0;
+}
+
+.help-text h2 {
+    color: var(--blue);
+    font-size: 45px;
+}
+
+hr {
+    margin: 15px 0 0 0;
+}
+
+.help-text p{
+    /* padding: 10px 0; */
+    font-size: 20px;
+    color: var(--blue);
+    line-height: 26px;
+    font-weight: bold
+}
+
+.help-text span {
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px 13px;
+    margin: 30px 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.help-text span a {
+    color: var(--blue);
+}
+
+.help-text a {
+    color: var(--blue);
+    font-size: 22px;
+    margin: 10px;
+}
+
+.help-text a:hover {
+    animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+    100% {transform: rotate(360deg);}
+  }
+
+  .animate-text3
+{
+   /* text-transform: uppercase; */
+   background-image: linear-gradient(
+    -225deg,
+    var(--blue) 0%,
+    #2e751d 29%,
+    rgb(145, 1, 1) 67%,
+    #142b0f 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  /* display: inline-block; */
+  font-size: 20px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+
+}
+
+/* ********************** How can we help ends here ****************** */
+
+/* ********************** Footer starts here ****************** */
+
+.footer {
+    padding: 40px 0;
+    line-height: 28px;
+}
+
+.flex-footer {
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-text1 {
+    width: 9%;
+}
+
+.footer-text2 {
+    width: 7%;
+}
+
+.footer-text3 {
+    width: 11%;
+}
+
+.flex-footer a {
+    color: var(--blue);
+    font-weight: bolder;
+    display: inline-block;
+}
+
+.footer-text-margin {
+    margin: 0 50px;
+}
+
+/* ********************** Footer ends here ****************** */
+
+.copyright {
+    background-color: var(--blue);
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+

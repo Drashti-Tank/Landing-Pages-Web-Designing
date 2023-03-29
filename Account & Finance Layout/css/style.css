@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Open+Sans&family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ******************** Header start here ******************* */
+
+.header {
+    max-width: 1200px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.top-header a{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px;
+    color: white;
+}
+
+.header-contact {
+    float: left;
+    width: 72%;
+}
+
+.header-contact a i {
+   margin: 0 10px;
+   color: rgb(6, 153, 6);
+}
+
+.header-lang {
+    float: right;
+    width: 28%;
+}
+
+.header-lang ul li {
+    display: inline-block;
+}
+
+.header-lang select {
+    color: white;
+    font-size: 16px;
+    padding: 5px 0;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+option {
+    color: black;
+}
+
+.header-bg {
+    background-color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+}
+
+.logo img {
+    max-width: 100%;
+    margin: 5px;
+}
+
+.menu {
+    float: left;
+    width: 65%;
+}
+
+.menu ul li {
+    margin: 17px 10px;
+    padding: 5px;
+    font-size: 14px;
+    display: inline-block;
+    /* position: absolute;
+    top: 80px;
+    visibility: hidden; */
+}
+
+/* .menu ul li:hover > ul {
+    top: 70px;
+    opacity: 1;
+    visibility: hidden;
+    transition: 0.3s linear;
+} */
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu ul li a {
+    display: block;
+    transition: 0.5s;
+}
+
+.menu a {
+    color: black;
+}
+
+.menu a:hover {
+    color: green;
+}
+
+.quote {
+    float: left;
+    width: 15%;
+    text-align: center;
+    background-color: rgb(6, 153, 6);
+    padding: 24px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.quote a {
+    color: white;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* ************************ Header end here ******************* */
+
+/* *********************** Banner start here ****************** */
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    /* max-width: 100%; */
+    background-size: cover;
+    background-position: center;
+}
+
+.banner::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 42, 68, 0.781);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-text {
+    width: 1200px;
+    margin: auto;
+    position: absolute;
+    top: 44%;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 60px;
+}
+
+.banner-text p {
+    margin: 8px;
+}
+
+.btn  {
+    margin: 30px 5px 5px 5px;
+    padding: 10px 30px;
+    border: 1px solid white;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    /* position: relative;
+    overflow: hidden; */
+}
+
+.btn a {
+    color: white;
+    text-align: center;
+}
+
+/* .banner-text span {
+    background-color: rgb(6, 153, 6);
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+} */
+
+.btn:hover {
+    background-color: rgb(6, 153, 6);
+    /* width: 100%; */
+}
+
+
+/* ************************* Header end here ************************* */
+
+/* ******************* Banner 2 start here ******************* */
+
+.boxdiv {
+    width: 1200px;
+    position: relative;
+    top: -60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box {
+    float: left;
+    width: 33.33%;
+    margin: auto;
+    padding: 60px;
+    background-color: rgb(255, 255, 255);
+    /* background-repeat: no-repeat; */
+    /* border: 1px solid black; */
+    text-align: center;
+    cursor: pointer;
+}
+
+.box:hover {
+    background: linear-gradient(rgba(4, 42, 68, 0.781),rgba(4, 42, 68, 0.781)), url(../images/real-account.jpg);
+    max-width: 100%;
+    /* height: 100%; */
+    color: white;
+}
+
+.fa-icon {
+    color: rgb(6, 153, 6);
+    font-size: 30px;
+}
+
+.banner2 .box p {
+    line-height: 25px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.banner2 .banner2-text p {
+    line-height: 25px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.banner2-text p {
+    line-height: 20px;
+}
+
+.banner2-text .text1 {
+    float: left;
+    width: 30%;
+    /* margin-top: 40px; */
+}
+
+.banner2-text .text2 {
+    float: right;
+    width: 30%;
+    /* margin: 40px 0 0 10px; */
+}
+
+.banner2-img {
+    float: left;
+    width: 30%;
+    text-align: center;
+    /* margin-top: 30px; */
+}
+
+.banner2-text .text {
+    width: 90%;
+    /* margin: 30px; */
+    padding: 10px;
+    /* float: right; */
+}
+
+/* .banner2-text img {
+    float: left;
+} */
+
+.clearfix {
+    clear: both;
+}
+
+/* ******************* Banner 2 end here ******************* */
+
+/* ************* Innovation leader start here **************  */
+
+.banner3 {
+    background-image: linear-gradient(rgb(4 41 68 / 0.781),rgba(4 41 68 / 0.781)),url(../images/banner3.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: -2px;
+    /* position: relative;
+    z-index: -1; */
+}
+
+/* .banner3::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 42, 68, 0.781);
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+.banner3-text {
+    color: white;
+    padding: 50px 0 50px 0;
+    width: 58%;
+}
+
+.banner3 h1 {
+    font-size: 50px;
+}
+
+.banner3 h1 span {
+    color: rgb(6, 153, 6);
+}
+
+.banner3-text p {
+    padding: 20px 0 0 0;
+}
+
+.banner3-div-text {
+    color: white;
+    display: inline-block;
+    padding: 0 0 30px 0;
+    margin: 15px;
+}
+
+
+/* ************* Innovation leader end here **************  */
+
+/* *************** Happy client start here *************** */
+
+.banner4 {
+    color:rgb(11, 43, 112);
+    line-height: 27px;
+}
+
+.banner4-text img {
+    display: block;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.banner4-text h2 {
+    text-align: center;
+    margin: 15px 0 20px 0;
+}
+
+.banner4-text p {
+    text-align: center;
+    margin: 0 0 55px 0;
+}
+
+.testimonial {
+    text-align: center;
+    margin: 5px 0 20px 0;
+}
+
+.testimonial img:hover {
+    cursor: pointer;
+}
+
+/* *************** Happy client end here *************** */
+
+
+/* ******************* Request a callback start here ********************* */
+
+.banner5 {
+    background-image: linear-gradient(rgb(4 41 68 / 0.781),rgba(4 41 68 / 0.781)),url(../images/banner5.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    /* position: relative;
+    z-index: -1; */
+}
+
+.banner5-text {
+    color: white;
+    /* padding: 30px 0 90px; */
+    width: 50%;
+    display: inline-block;
+}
+
+.banner5-text h1 {
+    font-size: 50px;
+}
+
+.banner5-text p {
+    padding: 10px 0;
+    line-height: 28px;
+}
+
+.banner5 span {
+    color: rgb(6, 153, 6);
+}
+
+.discuss-form {
+    margin: 40px 0 40px 70px;
+    color: white;
+    display: inline-block;
+    width: 36%;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #07020277;
+    text-align: center;
+}
+
+.discuss-form input[type=text], select {
+    box-sizing: border-box;
+    width: 80%;
+    padding: 12px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .discuss-form input[type=submit] {
+    width: 80%;
+    background-color: rgb(6, 153, 6);
+    color: white;
+    padding: 14px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .discuss-form input[type=submit]:hover {
+    background-color: rgb(68, 216, 68);
+  }
+
+/* ******************* Request a callback end here ********************* */
+
+/* ******************* Latest news section start here ********************* */
+
+.banner6 h1 {
+    margin: 50px 50px 20px;
+    text-align: center;
+    font-size: 36px;
+    color: rgb(11, 43, 112);
+    font-weight: 900;
+}
+
+.banner6 span {
+    color: rgb(6, 153, 6);
+}
+
+.news-col {
+    float: left;
+    width: 49%;
+    margin: 10px 10px 70px 0;
+}
+
+.news-col img {
+    float: left;
+    width: 50%;
+}
+
+.news-col h2 {
+    float: left;
+    width: 46%;
+    color: rgb(11, 43, 112);
+}
+
+.news-col p {
+    float: left;
+    width: 42%;
+    margin: 20px;
+    color: rgb(11, 43, 112);
+}
+
+
+/* .advisory-text {
+    float: left;
+    width: 23%;
+    margin: 10px 10px 70px 0;
+} */
+
+/* .finance {
+    float: left;
+    width: 47%;
+    margin: 10px 10px 70px 0;
+} */
+
+
+.news-col {
+    float: left;
+    width: 49%;
+    margin: 10px 10px 70px 0;
+}
+
+.news-col img {
+    float: left;
+    width: 50%;
+}
+
+.news-col h2 {
+    float: right;
+    width: 46%;
+    color: rgb(11, 43, 112);
+}
+
+.news-col p {
+    float: right;
+    width: 42%;
+    margin: 20px;
+    color: rgb(11, 43, 112);
+}
+
+
+/* .finance-text {
+    float: left;
+    width: 27%;
+    margin: 10px 10px 70px 0;
+} */
+
+
+
+/* .banner6 h2, p {
+    margin: 20px;
+    color: rgb(11, 43, 112);
+} */
+
+
+/* ******************* Latest news section end here  ********************* */
+
+/* ******************* All companies logo start here  ********************* */
+
+.banner7-logo {
+    background-color: rgb(219, 215, 215);
+}
+
+.banner7-logo .a1 {
+    margin-left: 0;
+}
+
+.banner7-logo a {
+    margin: 45px;
+}
+
+/* ******************* All companies logo end here  ********************* */
+
+/* ******************* footer start here  ********************* */
+
+.footer {
+    background-color: rgba(4, 42, 68);
+}
+
+.footer i {
+    color: rgb(6, 153, 6);
+    padding-right: 10px;
+}
+
+.footer .margin {
+    margin: 65px 10px;
+}
+
+/* ******** consulon ******** */
+
+.consuloan {
+    float: left;
+    width: 25%;
+    margin: 55px 0;
+}
+
+.consuloan p {
+    line-height: 28px;
+    color:rgb(126, 126, 126);
+}
+
+.consuloan a {
+    margin-top: 15px;
+    display: inline-block;
+    line-height: 18px;
+    color:rgb(126, 126, 126);
+}
+
+/* ******** links ******** */
+
+.links {
+    float: left;
+    width: 23%;
+    color: white;
+    margin: 65px 0 0 25px;
+}
+
+.links ul li {
+    display: inline-block;
+    width: 45%;
+}
+
+
+.links a {
+    display: inline-block;
+    color: rgb(126, 126, 126);
+    margin: 15px 6px;
+    line-height: 13px;
+}
+
+.links a:hover {
+    color: rgb(6, 153, 6);
+}
+
+/* ******** recent news ******** */
+
+.recent-news {
+    float: left;
+    width: 21%;
+    color: white;
+    line-height: 27px;
+}
+
+.recent-news h4 {
+    margin-top: 14px;
+    color:rgb(126, 126, 126) ;
+}
+
+.recent-news p {
+    color:rgb(126, 126, 126);
+}
+
+.recent-news i {
+    
+    padding-right: 10px;
+}
+
+/* ******** news letter ******** */
+
+
+.newsletter {
+    float: left;
+    width: 20%;
+    color: white;
+}
+
+.newsletter p {
+    margin-top: 14px;
+    color: rgb(126, 126, 126);
+}
+
+.newsletter input {
+    display: inline-block;
+    padding: 10px 40px;
+    margin-top: 20px;
+}
+
+.newsletter a {
+    display: inline-block;
+    margin-top: 14px;
+    color: white;
+    padding: 10px 81px;
+    border: 1px solid rgb(6, 153, 6);
+    background-color: rgb(6, 153, 6);
+}
+
+.newsletter a:hover {
+    background-color: rgb(3, 80, 3);
+    border: 1px solid rgb(3, 80, 3);
+}
+
+/* *******footer bottom ****** */
+
+.footer-bottom {
+    background-color:rgb(36, 52, 68) ;
+    /* padding: 16px; */
+}
+
+.footer-bottom p {
+    float: left;
+    width: 70%;
+    color: rgb(126, 126, 126);
+    padding-top: 10px;
+}
+
+.footer-bottom span {
+    color: rgb(10, 219, 10);
+}
+
+.footer-bottom ul li {
+    float: left;
+    width: 5%;
+    margin: 10px 0;
+}
+
+.footer-bottom ul li i {
+   color: gray;
+   font-size: 24px;
+}
+
+.footer-bottom ul li i:hover {
+    color:rgb(10, 219, 10);
+}
+
+
+
+
+
+/* ******************* footer end here  ********************* */
+
+
+
+
+
+/* form color  */
+/* background-color: #f2f2f2a4; */
